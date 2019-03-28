@@ -1,0 +1,30 @@
+CREATE TABLE D03_04_2019_Asia_Aircon_AC_10_00_AM_1012(
+    S_1 varchar(150),
+    S_2 varchar(150),
+    WL varchar(50),
+    S_3 varchar(150),
+    S_4 varchar(150)
+    );
+
+Delete Table--------->DROP TABLE D03_04_2019_Asia_Aircon_AC_10_00_AM_1012; (Don't try it for know how it work..... It's very Dangerous!!!!......Only for emergency!!)
+
+Quary----------->
+Show all seats------------>SELECT * FROM D03_04_2019_Asia_Aircon_AC_10_00_AM_1012;
+Booked C1 ---------->UPDATE D03_04_2019_Asia_Aircon_AC_10_00_AM_1012 SET S_1='C1(Booked) Name: Jahidur Rahman, Mobile No: 01624134067' WHERE S_1='C1';
+Booked D2----------->UPDATE D03_04_2019_Asia_Aircon_AC_10_00_AM_1012 SET S_2='D2(Booked) Name: Rasel Uddin, Mobile No: 0172314456' WHERE S_2='D2';
+Booked E3----------->UPDATE D03_04_2019_Asia_Aircon_AC_10_00_AM_1012 SET S_3='E3(Booked) Name: Nusrat Jahan, Mobile No: 0172322566' WHERE S_3='E3';
+Booked B4----------->UPDATE D03_04_2019_Asia_Aircon_AC_10_00_AM_1012 SET S_4='B4(Booked) Name: Sowrob, Mobile No: 01944352444' WHERE S_4='B4';
+Cancel E3 Booking----->UPDATE D03_04_2019_Asia_Aircon_AC_10_00_AM_1012 SET S_3='E3' WHERE S_3='E3(Booked) Name: Nusrat Jahan, Mobile No: 0172322566';
+
+Data--------------->
+INSERT INTO D03_04_2019_Asia_Aircon_AC_10_00_AM_1012 VALUES('Door','__','__','Engine','Driver');
+INSERT INTO D03_04_2019_Asia_Aircon_AC_10_00_AM_1012 VALUES('A1','A2','__','A3','A4');
+INSERT INTO D03_04_2019_Asia_Aircon_AC_10_00_AM_1012 VALUES('B1','B2','__','B3','B4');
+INSERT INTO D03_04_2019_Asia_Aircon_AC_10_00_AM_1012 VALUES('C1','C2','__','C3','C4');
+INSERT INTO D03_04_2019_Asia_Aircon_AC_10_00_AM_1012 VALUES('D1','D2','__','D3','D4');
+INSERT INTO D03_04_2019_Asia_Aircon_AC_10_00_AM_1012 VALUES('E1','E2','__','E3','E4');
+INSERT INTO D03_04_2019_Asia_Aircon_AC_10_00_AM_1012 VALUES('F1','F2','__','F3','F4');
+INSERT INTO D03_04_2019_Asia_Aircon_AC_10_00_AM_1012 VALUES('G1','G2','__','G3','G4');
+INSERT INTO D03_04_2019_Asia_Aircon_AC_10_00_AM_1012 VALUES('H1','H2','__','H3','H4');
+INSERT INTO D03_04_2019_Asia_Aircon_AC_10_00_AM_1012 VALUES('I1','I2','__','I3','I4');
+INSERT INTO D03_04_2019_Asia_Aircon_AC_10_00_AM_1012 VALUES('J1','J2','__','J3','J4');

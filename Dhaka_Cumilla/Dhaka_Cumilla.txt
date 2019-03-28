@@ -1,0 +1,65 @@
+CREATE TABLE Dhaka_Cumilla(
+    Date varchar(50),
+    Bus_Name varchar(100),
+    Bus_Type varchar(20),
+    Departure_Time varchar(50),
+    Arrival_Time varchar(50),
+    Seats_Available int,
+    Cost int,
+    Bus_serial_number varchar(50)
+    );
+
+Delete Table--------->DROP TABLE Dhaka_Cumilla; (Don't try it for know how it work..... It's very Dangerous!!!!......Only for emergency!!)
+
+Show Full Table----------->SELECT *FROM Dhaka_Cumilla;
+Show 02-04-2019 date available Bus-------> SELECT * FROM Dhaka_Cumilla WHERE Date like '02-04-2019';
+Show 03-04-2019 date available Bus-------> SELECT * FROM Dhaka_Cumilla WHERE Date like '03-04-2019';
+Show 02-04-2019 date available AC Bus-----> SELECT *FROM Dhaka_Cumilla WHERE Date LIKE '02-04-2019' and Bus_Type LIKE 'AC';
+Show 03-04-2019 date available AC Bus-----> SELECT *FROM Dhaka_Cumilla WHERE Date LIKE '03-04-2019' and Bus_Type LIKE 'AC';
+Show 02-04-2019 date available Non AC Bus----> SELECT *FROM Dhaka_Cumilla WHERE Date LIKE '02-04-2019' and Bus_Type LIKE 'Non AC';
+Show 02-04-2019 date available bus in time 10 t0 12 -----> SELECT *FROM Dhaka_Cumilla WHERE Departure_Time BETWEEN '10:00' and '12:00' and Date LIKE '02-04-2019';
+Show 02-04-2019 date available Asia Aircon Bus------->SELECT *FROM Dhaka_Cumilla WHERE Date LIKE '02-04-2019' and Bus_Name LIKE 'Asia Aircon';
+Show 02-04-2019 date available Asia Aircon AC Bus----->SELECT *FROM Dhaka_Cumilla WHERE Date LIKE '02-04-2019' and Bus_Name LIKE 'Asia Aircon' and Bus_Type LIKE 'AC';
+Show 02-04-2019 date available Asia Aircon Non AC Bus----> SELECT *FROM Dhaka_Cumilla WHERE Date LIKE '02-04-2019' and Bus_Name LIKE 'Asia Aircon' and Bus_Type LIKE 'Non AC';
+
+Data------------------>
+Date-(02-04-2019)
+INSERT INTO Dhaka_Cumilla VALUES('02-04-2019','Royal coach','AC','10:30 AM','12:30 PM',36,300,'1001');
+INSERT INTO Dhaka_Cumilla VALUES('02-04-2019','Prince','AC','11:30 AM','01:30 PM',36,300,'1002');
+INSERT INTO Dhaka_Cumilla VALUES('02-04-2019','Asia Aircon','Non AC','11:00 AM','01:00 PM',48,200,'1003');
+INSERT INTO Dhaka_Cumilla VALUES('02-04-2019','Asia Aircon','AC','10:00 AM','12:00 AM',36,350,'1004');
+INSERT INTO Dhaka_Cumilla VALUES('02-04-2019','Royal coach','Non AC','11:30 AM','01:30 PM',36,300,'1005');
+INSERT INTO Dhaka_Cumilla VALUES('02-04-2019','Prince','AC','12:30 PM','02:30 PM',36,300,'1006');
+INSERT INTO Dhaka_Cumilla VALUES('02-04-2019','Asia Aircon','AC','01:00 PM','03:00 PM',48,350,'1007');
+INSERT INTO Dhaka_Cumilla VALUES('02-04-2019','Asia Aircon','Non AC','10:00 AM','12:00 AM',36,200,'1008');
+
+Date-(03-04-2019)
+INSERT INTO Dhaka_Cumilla VALUES('03-04-2019','Royal coach','AC','10:30 AM','12:30 PM',36,300,'1009');
+INSERT INTO Dhaka_Cumilla VALUES('03-04-2019','Prince','AC','11:30 AM','01:30 PM',36,300,'1010');
+INSERT INTO Dhaka_Cumilla VALUES('03-04-2019','Asia Aircon','Non AC','11:00 AM','01:00 PM',48,200,'1011');
+INSERT INTO Dhaka_Cumilla VALUES('03-04-2019','Asia Aircon','AC','10:00 AM','12:00 AM',36,350,'1012');
+INSERT INTO Dhaka_Cumilla VALUES('03-04-2019','Royal coach','Non AC','11:30 AM','01:30 PM',36,300,'1013');
+INSERT INTO Dhaka_Cumilla VALUES('03-04-2019','Prince','AC','12:30 PM','02:30 PM',36,300,'1014');
+INSERT INTO Dhaka_Cumilla VALUES('03-04-2019','Asia Aircon','AC','01:00 PM','03:00 PM',48,350,'1014');
+INSERT INTO Dhaka_Cumilla VALUES('03-04-2019','Asia Aircon','Non AC','10:00 AM','12:00 AM',36,200,'1015');
+
+Date-(04-04-2019)
+INSERT INTO Dhaka_Cumilla VALUES('04-04-2019','Royal coach','AC','10:30 AM','12:30 PM',36,300,'1016');
+INSERT INTO Dhaka_Cumilla VALUES('04-04-2019','Prince','AC','11:30 AM','01:30 PM',36,300,'1017');
+INSERT INTO Dhaka_Cumilla VALUES('04-04-2019','Asia Aircon','Non AC','11:00 AM','01:00 PM',48,200,'1018');
+INSERT INTO Dhaka_Cumilla VALUES('04-04-2019','Asia Aircon','AC','10:00 AM','12:00 AM',36,350,'1019');
+INSERT INTO Dhaka_Cumilla VALUES('04-04-2019','Royal coach','Non AC','11:30 AM','01:30 PM',36,300,'1020');
+INSERT INTO Dhaka_Cumilla VALUES('04-04-2019','Prince','AC','12:30 PM','02:30 PM',36,300,'1021');
+INSERT INTO Dhaka_Cumilla VALUES('04-04-2019','Asia Aircon','AC','01:00 PM','03:00 PM',48,350,'1022');
+INSERT INTO Dhaka_Cumilla VALUES('04-04-2019','Asia Aircon','Non AC','10:00 AM','12:00 AM',36,200,'1023');
+
+---------------------(Extra)----------------------------
+Date-(05-04-2019)
+INSERT INTO Dhaka_Cumilla VALUES('05-04-2019','Royal coach','AC','10:30 AM','12:30 PM',36,300);
+INSERT INTO Dhaka_Cumilla VALUES('05-04-2019','Prince','AC','11:30 AM','01:30 PM',36,300);
+INSERT INTO Dhaka_Cumilla VALUES('05-04-2019','Asia Aircon','Non AC','11:00 AM','01:00 PM',48,200);
+INSERT INTO Dhaka_Cumilla VALUES('05-04-2019','Asia Aircon','AC','10:00 AM','12:00 AM',36,350);
+INSERT INTO Dhaka_Cumilla VALUES('05-04-2019','Royal coach','Non AC','11:30 AM','01:30 PM',36,300);
+INSERT INTO Dhaka_Cumilla VALUES('05-04-2019','Prince','AC','12:30 PM','02:30 PM',36,300);
+INSERT INTO Dhaka_Cumilla VALUES('05-04-2019','Asia Aircon','AC','01:00 PM','03:00 PM',48,350);
+INSERT INTO Dhaka_Cumilla VALUES('05-04-2019','Asia Aircon','Non AC','10:00 AM','12:00 AM',36,200);
