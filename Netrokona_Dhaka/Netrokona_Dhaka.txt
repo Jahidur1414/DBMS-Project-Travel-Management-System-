@@ -1,0 +1,66 @@
+CREATE TABLE Netrokona_Dhaka(
+    Date varchar(50),
+    Bus_Name varchar(100),
+    Bus_Type varchar(20),
+    Departure_Time varchar(50),
+    Arrival_Time varchar(50),
+    Seats_Available int,
+    Cost int,
+    Bus_serial_number varchar(50)
+    );
+
+Delete Table--------->DROP TABLE Netrokona_Dhaka; (Don't try it for know how it work..... It's very Dangerous!!!!......Only for emergency!!)
+
+Show Full Table----------->SELECT *FROM Netrokona_Dhaka;
+Show 02-04-2019 date available Bus-------> SELECT * FROM Netrokona_Dhaka WHERE Date like '02-04-2019';
+Show 03-04-2019 date available Bus-------> SELECT * FROM Netrokona_Dhaka WHERE Date like '03-04-2019';
+Show 02-04-2019 date available AC Bus-----> SELECT *FROM Netrokona_Dhaka WHERE Date LIKE '02-04-2019' and Bus_Type LIKE 'AC';
+Show 03-04-2019 date available AC Bus-----> SELECT *FROM Netrokona_Dhaka WHERE Date LIKE '03-04-2019' and Bus_Type LIKE 'AC';
+Show 02-04-2019 date available Non AC Bus----> SELECT *FROM Netrokona_Dhaka WHERE Date LIKE '02-04-2019' and Bus_Type LIKE 'Non AC';
+Show 02-04-2019 date available bus in time 10 t0 12 -----> SELECT *FROM Netrokona_Dhaka WHERE Departure_Time BETWEEN '10:00' and '12:00' and Date LIKE '02-04-2019';
+Show 02-04-2019 date available Asia Aircon Bus------->SELECT *FROM Netrokona_Dhaka WHERE Date LIKE '02-04-2019' and Bus_Name LIKE 'Ena';
+Show 02-04-2019 date available Asia Aircon AC Bus----->SELECT *FROM Netrokona_Dhaka WHERE Date LIKE '02-04-2019' and Bus_Name LIKE 'Ena' and Bus_Type LIKE 'AC';
+Show 02-04-2019 date available Asia Aircon Non AC Bus----> SELECT *FROM Netrokona_Dhaka WHERE Date LIKE '02-04-2019' and Bus_Name LIKE 'Ena' and Bus_Type LIKE 'Non AC';
+
+Data------------------>
+Date-(02-04-2019)
+INSERT INTO Netrokona_Dhaka VALUES('02-04-2019','Dhrubo','AC','8:30 AM','02:30 PM',44,700,'4001');
+INSERT INTO Netrokona_Dhaka VALUES('02-04-2019','Crawon_delax',' Non AC','8:30 AM','3:30 PM',44,350,'4002');
+INSERT INTO Netrokona_Dhaka VALUES('02-04-2019','Ena','AC','09:00 AM','2:00 PM',44,750,'4003');
+INSERT INTO Netrokona_Dhaka VALUES('02-04-2019','Ena','Non AC','09:30 AM','03:00 PM',44,350,'4004');
+INSERT INTO Netrokona_Dhaka VALUES('02-04-2019','Dhrubo','Non AC','09:00 AM','03:00 PM',44,300,'4005');
+INSERT INTO Netrokona_Dhaka VALUES('02-04-2019','Rony','Non AC','10:00 AM','03:30 PM',46,350,'4006');
+INSERT INTO Netrokona_Dhaka VALUES('02-04-2019','Rony','Non AC','09:00 PM','03:00 AM',46,350,'4007');
+INSERT INTO Netrokona_Dhaka VALUES('02-04-2019','Crawon_delax','Non AC','9:30 PM','3:30 AM',44,350,'4008');
+
+Date-(03-04-2019)
+INSERT INTO Netrokona_Dhaka VALUES('03-04-2019','Dhrubo','AC','8:30 AM','02:30 PM',44,700,'4001');
+INSERT INTO Netrokona_Dhaka VALUES('03-04-2019','Crawon_delax',' Non AC','8:30 AM','3:30 PM',44,350,'4002');
+INSERT INTO Netrokona_Dhaka VALUES('03-04-2019','Ena','AC','09:00 AM','2:00 PM',44,750,'4003');
+INSERT INTO Netrokona_Dhaka VALUES('03-04-2019','Ena','Non AC','09:30 AM','03:00 PM',44,350,'4004');
+INSERT INTO Netrokona_Dhaka VALUES('03-04-2019','Dhrubo','Non AC','09:00 AM','03:00 PM',44,300,'4005');
+INSERT INTO Netrokona_Dhaka VALUES('03-04-2019','Rony','Non AC','10:00 AM','03:30 PM',46,350,'4006');
+INSERT INTO Netrokona_Dhaka VALUES('03-04-2019','Rony','Non AC','09:00 PM','03:00 AM',46,350,'4007');
+INSERT INTO Netrokona_Dhaka VALUES('03-04-2019','Crawon_delax','Non AC','9:30 PM','3:30 AM',44,350,'4008');
+
+Date-(04-04-2019)
+INSERT INTO Netrokona_Dhaka VALUES('04-04-2019','Dhrubo','AC','8:30 AM','02:30 PM',44,700,'4001');
+INSERT INTO Netrokona_Dhaka VALUES('04-04-2019','Crawon_delax',' Non AC','8:30 AM','3:30 PM',44,350,'4002');
+INSERT INTO Netrokona_Dhaka VALUES('04-04-2019','Ena','AC','09:00 AM','2:00 PM',36,750,'4003');
+INSERT INTO Netrokona_Dhaka VALUES('04-04-2019','Ena','Non AC','09:30 AM','03:00 PM',44,350,'4004');
+INSERT INTO Netrokona_Dhaka VALUES('04-04-2019','Dhrubo','Non AC','09:00 AM','03:00 PM',44,300,'4005');
+INSERT INTO Netrokona_Dhaka VALUES('04-04-2019','Rony','Non AC','10:00 AM','03:30 PM',46,350,'4006');
+INSERT INTO Netrokona_Dhaka VALUES('04-04-2019','Rony','Non AC','09:00 PM','03:00 AM',46,350,'4007');
+INSERT INTO Netrokona_Dhaka VALUES('04-04-2019','Crawon_delax','Non AC','9:30 PM','3:30 AM',44,350,'4008');
+
+-----------------------------------(Extra)--------------------------------------
+
+Date-(05-04-2019)
+INSERT INTO Netrokona_Dhaka VALUES('05-04-2019','Dhrubo','AC','8:30 AM','02:30 PM',44,700,'3001');
+INSERT INTO Netrokona_Dhaka VALUES('05-04-2019','Crawon_delax',' Non AC','8:30 AM','3:30 PM',44,350,'3002');
+INSERT INTO Netrokona_Dhaka VALUES('05-04-2019','Ena','AC','09:00 AM','2:00 PM',44,750,'3003');
+INSERT INTO Netrokona_Dhaka VALUES('05-04-2019','Ena','Non AC','09:30 AM','03:00 PM',44,350,'3004');
+INSERT INTO Netrokona_Dhaka VALUES('05-04-2019','Dhrubo','Non AC','09:00 AM','03:00 PM',44,300,'3005');
+INSERT INTO Netrokona_Dhaka VALUES('05-04-2019','Rony','Non AC','10:00 AM','03:30 PM',46,350,'3006');
+INSERT INTO Netrokona_Dhaka VALUES('05-04-2019','Rony','Non AC','09:00 PM','03:00 AM',46,350,'3007');
+INSERT INTO Netrokona_Dhaka VALUES('05-04-2019','Crawon_delax','Non AC','9:30 PM','3:30 AM',44,350,'3008');
