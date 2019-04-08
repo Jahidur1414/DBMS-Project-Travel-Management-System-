@@ -1,0 +1,17 @@
+CREATE TABLE Route_Map(
+    Travel_From varchar(100),
+    Travel_To varchar(100)
+    );
+
+INSERT INTO Route_Map VALUES('Dhaka','Coxbazar');
+INSERT INTO Route_Map VALUES('Coxbazar','Dhaka');
+INSERT INTO Route_Map VALUES('Dhaka','Cumilla');
+INSERT INTO Route_Map VALUES('Cumilla','Dhaka');
+INSERT INTO Route_Map VALUES('Dhaka','Cumilla');
+INSERT INTO Route_Map VALUES('Cumilla','Dhaka');
+INSERT INTO Route_Map VALUES('Dhaka','Netrokona');
+INSERT INTO Route_Map VALUES('Netrokona','Dhaka');
+
+Quary---------
+
+Show Full Table----------->SELECT *FROM Route_Map;
